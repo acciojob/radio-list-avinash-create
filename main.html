@@ -1,16 +1,24 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Apply red color to radio buttons on even positions */
+        input[type="radio"]:nth-child(even) {
+            color: red;
+        }
+    </style>
+    <title>Radio Buttons Example</title>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
+    <form>
+        <label for="radio1"><input type="radio" id="radio1" name="radiogroup"> Radio 1</label><br>
+        <label for="radio2"><input type="radio" id="radio2" name="radiogroup" disabled> Radio 2</label><br>
+        <label for="radio3"><input type="radio" id="radio3" name="radiogroup" checked> Radio 3 </label><br>
+        <label for="radio4"><input type="radio" id="radio4" name="radiogroup"> Radio 4</label><br>
+        <label for="radio5"><input type="radio" id="radio5" name="radiogroup"> Radio 5</label><br>
+        <label for="radio6"><input type="radio" id="radio6" name="radiogroup"> Radio 6</label><br>
+    </form>
 </body>
-
 </html>
